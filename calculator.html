@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Carbon Footprint Calculator</h1>
+        <div class="form-group">
+            <label for="appliance">Select Appliance:</label>
+            <select id="appliance">
+                <option value="tv">TV</option>
+                <option value="fridge">Fridge</option>
+                <option value="microwave">Microwave</option>
+                <option value="ac">Air Conditioner</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="energy">Energy Consumption (in kWh):</label>
+            <input type="number" id="energy" min="0">
+        </div>
+        <div class="form-group">
+            <label for="efficiency">Appliance Efficiency (1 = Very Efficient, 5 = Inefficient):</label>
+            <input type="number" id="efficiency" min="1" max="5" value="3">
+        </div>
+        <div class="form-group">
+            <label for="energySource">Energy Source:</label>
+            <select id="energySource">
+                <option value="coal">Coal</option>
+                <option value="natural_gas">Natural Gas</option>
+                <option value="renewable">Renewable</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="minutes">Number of Minutes Used:</label>
+            <input type="number" id="minutes" min="0">
+        </div>
+        <div class="form-group">
+            <label for="period">Calculate for:</label>
+            <select id="period">
+                <option value="day">Per Day</option>
+                <option value="month">Per Month</option>
+            </select>
+        </div>
+        <button id="calculate" class="button type1">CALCULATE</button>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="cal.js"></script>
+</body>
+</html>

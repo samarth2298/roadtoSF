@@ -48,4 +48,3 @@ function calculateCarbonFootprint(appliance, energyConsumption, efficiency, ener
 
     return Math.round(carbonFootprint * 100.0) / 100.0; // Round to two decimal places
 }
-                                                                                                                          

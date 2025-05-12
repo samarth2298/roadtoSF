@@ -1,70 +1,68 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f0f4f8;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom right, #d1f7dc, #cbe6f7);
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .container {
-    max-width: 600px;
-    margin: 50px auto;
-    background: white;
-    padding: 30px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffffffcc;
     border-radius: 12px;
+    padding: 30px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     text-align: center;
-    color: #2b6777;
-    margin-bottom: 30px;
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
 }
 
 label {
     display: block;
     margin-bottom: 5px;
-    font-weight: 600;
-    color: #333;
+    color: #37474f;
 }
 
-input,
-select {
+input, select {
     width: 100%;
-    padding: 10px 12px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 14px;
-    background-color: #f9f9f9;
+    padding: 8px;
+    border: 1px solid #b0bec5;
+    border-radius: 6px;
+    font-size: 1em;
 }
 
-button {
-    width: 100%;
-    padding: 12px;
-    background-color: #2b6777;
-    color: white;
+.button {
+    background-color: #4caf50;
     border: none;
-    border-radius: 8px;
+    color: white;
+    padding: 12px;
+    width: 100%;
     font-size: 16px;
+    border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background 0.3s ease;
 }
 
-button:hover {
-    background-color: #1d4e5f;
+.button:hover {
+    background-color: #388e3c;
 }
 
-#result {
+.result {
     margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #2b6777;
-    text-align: center;
-}
-
-footer {
-    text-align: center;
-    margin-top: 50px;
-    color: #888;
-    font-size: 14px;
+    padding: 15px;
+    background-color: #e0f7fa;
+    border-radius: 8px;
+    color: #004d40;
+    font-size: 1em;
 }

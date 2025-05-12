@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Compare Appliances | Karbon</title>
+  <link rel="stylesheet" href="compare.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🔌 Compare Appliances</h1>
+    <form id="compareForm">
+      <label>Appliance 1: <input type="text" id="appliance1" required></label>
+      <label>Wattage (W): <input type="number" id="watt1" required></label>
+      <label>Usage (minutes): <input type="number" id="time1" required></label>
+      
+      <label>Appliance 2: <input type="text" id="appliance2" required></label>
+      <label>Wattage (W): <input type="number" id="watt2" required></label>
+      <label>Usage (minutes): <input type="number" id="time2" required></label>
+      
+      <button type="submit">Compare</button>
+    </form>
+    <p id="compareResult"></p>
+  </div>
+  <script src="compare.js"></script>
+</body>
+</html>

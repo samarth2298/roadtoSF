@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Appliance | Karbon</title>
+  <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🧰 Custom Appliance</h1>
+    <form id="customForm">
+      <label>Appliance Name: <input type="text" id="appliance" required></label>
+      <label>Wattage (W): <input type="number" id="watt" required></label>
+      <label>Usage (minutes): <input type="number" id="time" required></label>
+      <button type="submit">Estimate</button>
+    </form>
+    <p id="customResult"></p>
+  </div>
+  <script src="custom.js"></script>
+</body>
+</html>
